@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "fs": "^0.0.1-security",
+    "kafkajs": "^2.2.4",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "build": "tsc",
+    "init-topics": "ts-node src/admin.ts",
+    "produce": "ts-node src/producer.ts",
+    "test": "ts-node examples/test.ts",
+    "demo": "ts-node examples/demo.ts",
+    "sms-demo": "ts-node src/sms-demo.ts",
+    "fraud-demo": "ts-node src/fraud-demo.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
